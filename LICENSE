@@ -1,0 +1,11 @@
+This repository is licensed under the Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
+
+Full text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+Game engine (poker.lisp, main.lisp) and course bots (noob1, noob2, noob3 in players.lisp):
+Copyright Paulo Garcia (paulo.g@chula.ac.th), International School of Engineering,
+Faculty of Engineering, Chulalongkorn University, Thailand. Licensed under CC BY-NC-SA 4.0.
+Modified by Fady Fares in 2026 (three bug fixes, marked ";fix:" in poker.lisp).
+
+AI player (AI function in players.lisp) and benchmark.lisp: Fady Fares, 2025-2026.

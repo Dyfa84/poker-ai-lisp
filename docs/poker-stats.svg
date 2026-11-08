@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 350" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title>Poker AI against the course bots</title>
+  <defs>
+    <radialGradient id="felt" cx="45%" cy="45%" r="75%">
+      <stop offset="0%" stop-color="#1f8a4f"/>
+      <stop offset="65%" stop-color="#136b3b"/>
+      <stop offset="100%" stop-color="#0c4a29"/>
+    </radialGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a3420"/>
+      <stop offset="100%" stop-color="#3a1f12"/>
+    </linearGradient>
+    <style>
+      .title { fill: #ffffff; font-size: 26px; font-weight: 800; letter-spacing: 0.5px; }
+      .sub { fill: #cfe9da; font-size: 14px; }
+      .cap { fill: #e9f5ee; font-size: 13px; font-weight: 700; letter-spacing: 1.6px; }
+      .name { fill: #ffffff; font-size: 17px; font-weight: 600; }
+      .me { fill: #ffffff; font-size: 17px; font-weight: 800; }
+      .val { fill: #ffffff; font-size: 16px; font-weight: 700; }
+      .track { fill: rgba(0, 0, 0, 0.28); }
+      .ai { fill: #e5484d; }
+      .bot { fill: #f1ece2; }
+      .even { stroke: #ffd66b; stroke-width: 1.6; stroke-dasharray: 4 4; }
+      .evenlab { fill: #ffd66b; font-size: 12px; font-weight: 600; }
+      .pct { fill: #1b1b1b; font-size: 17px; font-weight: 800; }
+      .vs { fill: #ffffff; font-size: 16px; font-weight: 700; }
+      .suitw { fill: #ffffff; font-size: 24px; }
+      .suitr { fill: #e5484d; font-size: 24px; }
+    </style>
+  </defs>
+
+  <!-- Table -->
+  <rect x="0" y="0" width="1000" height="350" rx="70" fill="url(#wood)"/>
+  <rect x="14" y="14" width="972" height="322" rx="58" fill="url(#felt)"/>
+  <rect x="28" y="28" width="944" height="294" rx="46" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2"/>
+
+  <!-- Header -->
+  <text x="60" y="78" class="title">MY AI vs 3 COURSE BOTS</text>
+  <text x="60" y="104" class="sub">Three bots with different behaviors · full Texas Hold'em games simulated with SBCL</text>
+  <text x="826" y="80" class="suitw" text-anchor="middle">♠</text>
+  <text x="864" y="80" class="suitr" text-anchor="middle">♥</text>
+  <text x="900" y="80" class="suitr" text-anchor="middle">♦</text>
+  <text x="938" y="80" class="suitw" text-anchor="middle">♣</text>
+
+  <!-- 4-player table -->
+  <text x="60" y="146" class="cap">4-PLAYER TABLE · 5,000 GAMES</text>
+
+  <text x="60" y="179" class="me">My AI</text>
+  <rect x="160" y="162" width="360" height="22" rx="6" class="track"/>
+  <rect x="160" y="162" width="207" height="22" rx="6" class="ai"/>
+  <text x="377" y="179" class="val">57.5%</text>
+
+  <text x="60" y="215" class="name">Bot 2</text>
+  <rect x="160" y="198" width="360" height="22" rx="6" class="track"/>
+  <rect x="160" y="198" width="153" height="22" rx="6" class="bot"/>
+  <text x="323" y="215" class="val">42.4%</text>
+
+  <text x="60" y="251" class="name">Bot 3</text>
+  <rect x="160" y="234" width="360" height="22" rx="6" class="track"/>
+  <rect x="160" y="234" width="3" height="22" rx="1.5" class="bot"/>
+  <text x="173" y="251" class="val">0.06%</text>
+
+  <text x="60" y="287" class="name">Bot 1</text>
+  <rect x="160" y="270" width="360" height="22" rx="6" class="track"/>
+  <rect x="160" y="270" width="3" height="22" rx="1.5" class="bot"/>
+  <text x="173" y="287" class="val">0.02%</text>
+
+  <line x1="250" y1="154" x2="250" y2="298" class="even"/>
+  <text x="250" y="312" class="evenlab" text-anchor="middle">25% = even share</text>
+
+  <line x1="588" y1="136" x2="588" y2="300" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+
+  <!-- Heads-up -->
+  <text x="625" y="146" class="cap">HEADS-UP · 1,000 GAMES EACH</text>
+
+  <g transform="translate(670 218)">
+    <circle r="46" fill="#c8323a"/>
+    <circle r="40" fill="none" stroke="#ffffff" stroke-width="10" stroke-dasharray="11 9.94"/>
+    <circle r="30" fill="#f4efe6"/>
+    <circle r="30" fill="none" stroke="#c8323a" stroke-width="2" stroke-dasharray="3 3"/>
+    <text y="6" class="pct" text-anchor="middle">99.9%</text>
+  </g>
+  <text x="670" y="292" class="vs" text-anchor="middle">vs Bot 1</text>
+
+  <g transform="translate(785 218)">
+    <circle r="46" fill="#2563c9"/>
+    <circle r="40" fill="none" stroke="#ffffff" stroke-width="10" stroke-dasharray="11 9.94"/>
+    <circle r="30" fill="#f4efe6"/>
+    <circle r="30" fill="none" stroke="#2563c9" stroke-width="2" stroke-dasharray="3 3"/>
+    <text y="6" class="pct" text-anchor="middle">65.9%</text>
+  </g>
+  <text x="785" y="292" class="vs" text-anchor="middle">vs Bot 2</text>
+
+  <g transform="translate(900 218)">
+    <circle r="46" fill="#1d1d1f"/>
+    <circle r="40" fill="none" stroke="#ffffff" stroke-width="10" stroke-dasharray="11 9.94"/>
+    <circle r="30" fill="#f4efe6"/>
+    <circle r="30" fill="none" stroke="#1d1d1f" stroke-width="2" stroke-dasharray="3 3"/>
+    <text y="6" class="pct" text-anchor="middle">100%</text>
+  </g>
+  <text x="900" y="292" class="vs" text-anchor="middle">vs Bot 3</text>
+</svg>
